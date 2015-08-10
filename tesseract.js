@@ -53,7 +53,9 @@ if (Meteor.isServer) {
         var path = 'upload' + Random.id();
         switch(fileInfo.type){
           case 'image/jpeg':
-            return path + '.jpg';
+          return path + '.jpg';
+          case 'image/png':
+            return path + '.png';
           default:
             return path + '.TIF';
         }
