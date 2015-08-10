@@ -1,11 +1,5 @@
 if (Meteor.isClient) {
 
-  animateContentOut = function() {
-    $('.container').removeClass("animated fadeIn");
-  };
-  fadeContentIn = function() {
-    $('.container').addClass("animated fadeIn");
-  };
   Template.tesseract.helpers({
     uploadWatcher: function () {
       return {
