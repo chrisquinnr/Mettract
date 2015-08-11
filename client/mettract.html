@@ -4,23 +4,24 @@
 </head>
 
 <body>
+  {{>header}}
+  {{>mettract}}
+  {{>footer}}
+</body>
 
+<template name="header">
   <div class="header">
     <img width="100px" src="/img/box.png"><br>
     <h1 class="tesseract">Mettract</h1>
     <h4>Simple and fast OCR, delivered in a Meteor app</h4>
     <p>Drag and drop, we'll do the rest. <br>Large images work best. <br>Vector formats are good too.</p>
   </div>
+</template>
 
-  {{>tesseract}}
-
-</body>
-
-<template name="tesseract">
+<template name="mettract">
   <div class="upload-container col-md-12 text-center">
     {{#if loading}}
       <img src="/img/box.gif">
-      {{>footer}}
     {{else}}
       {{#if getResult}}
         <h4>Your Result</h4>
@@ -29,7 +30,6 @@
         </div>
           <br>
           <button id="reset" class="btn btn-default">Reset</button>
-          {{>footer}}
       {{else}}
         {{> dropzone callbacks=uploadWatcher }}
       {{/if}}
@@ -44,6 +44,5 @@
       <a href="https://github.com/desmondmorris/node-tesseract">Node Tesseract</a>
     <br>Made by <a href="http://twitter.com/chrisquinnr">Chris Quinn</a>
     <br><a href="http://gravitywell.co.uk">A Labs project from Gravitywell</a>
-
   </div>
 </template>

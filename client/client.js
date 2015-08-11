@@ -1,4 +1,4 @@
-Template.tesseract.helpers({
+Template.mettract.helpers({
   uploadWatcher: function () {
     return {
       finished: function (index, fileInfo, context) {
@@ -30,7 +30,7 @@ Template.tesseract.helpers({
   }
 });
 
-Template.tesseract.events({
+Template.mettract.events({
   'click #reset': function (e) {
     Session.set('result', '');
     Session.set('loading', false);

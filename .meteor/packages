@@ -15,3 +15,5 @@ jquery
 npm-container
 random
 msavin:jetsetter
+sanjo:jasmine
+velocity:html-reporter
