@@ -1,5 +1,4 @@
 Meteor.startup(function () {
-  var os = Meteor.npmRequire("os");
   var tmpDir = process.env.PWD + '/.uploads/tmp';
   var uploadDir = process.env.PWD + '/.uploads/';
   UploadServer.init({

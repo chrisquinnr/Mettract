@@ -9,7 +9,6 @@ Template.mettract.helpers({
             console.log(error);
             fs.unlinkSync(fileInfo.url);
           } else {
-            //console.log(licenceDetails);
             if (typeof result === 'object') {
               Session.set("result", 'Error');
             } else {
@@ -18,7 +17,6 @@ Template.mettract.helpers({
             }
           }
         });
-
       }
     }
   },
@@ -31,7 +29,7 @@ Template.mettract.helpers({
 });
 
 Template.mettract.events({
-  'click #reset': function (e) {
+  'click #reset': function () {
     Session.set('result', '');
     Session.set('loading', false);
   }
