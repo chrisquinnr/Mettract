@@ -18,6 +18,8 @@ Mettract takes an image containing text and passes it to Tesseract, open souce O
 
 ### Tesseract
 
-The software powering the OCR is called Tesseract and is available here: https://github.com/tesseract-ocr
+The software powering the OCR is called Tesseract and is available here: https://github.com/tesseract-ocr. Follow the instructions for installing Tesseract on your machine here: https://github.com/tesseract-ocr/tesseract/wiki
 
 We'll be using a node package to access the functionality provided by Tesseract through our meteor app, which you can grab here: https://github.com/desmondmorris/node-tesseract
+
+You can install this package using `npm install node-tesseract`
